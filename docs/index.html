@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulado - Combate a Incêndio</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 30px auto; padding: 20px; line-height: 1.6; }
+    h1 { text-align: center; }
+    .question { margin-bottom: 20px; }
+    .wrong { background-color: #ffe5e5; }
+    .correct { background-color: #e0ffe0; }
+  </style>
+</head>
+<body>
+  <h1>🔥 Simulado – Combate a Incêndio</h1>
+
+  <form id="quizForm">
+    <div class="question">
+      <p><strong>1. Qual é a classe de incêndio que envolve equipamentos elétricos energizados?</strong></p>
+      <label><input type="radio" name="q1" value="a"> a) Classe A</label><br>
+      <label><input type="radio" name="q1" value="b"> b) Classe B</label><br>
+      <label><input type="radio" name="q1" value="c"> c) Classe C</label><br>
+      <label><input type="radio" name="q1" value="d"> d) Classe D</label><br>
+      <label><input type="radio" name="q1" value="e"> e) Classe K</label>
+    </div>
+
+    <!-- Repita o bloco acima para q2 a q10 conforme as questões -->
+    <!-- Por exemplo: -->
+    <div class="question">
+      <p><strong>2. Em um princípio de incêndio em papel e madeira, o extintor mais adequado é o:</strong></p>
+      <label><input type="radio" name="q2" value="a"> a) CO₂</label><br>
+      <label><input type="radio" name="q2" value="b"> b) Pó químico seco</label><br>
+      <label><input type="radio" name="q2" value="c"> c) Espuma</label><br>
+      <label><input type="radio" name="q2" value="d"> d) Água pressurizada</label><br>
+      <label><input type="radio" name="q2" value="e"> e) Halon</label>
+    </div>
+
+    <!-- Continue com as demais 8 perguntas... depois -->
+    
+    <button type="button" onclick="corrigir()">Corrigir</button>
+  </form>
+
+  <h2 id="resultado"></h2>
+
+  <script>
+    const gabarito = {
+      q1: "c",
+      q2: "d",
+      // Adicione as respostas das demais aqui, ex: q3: "a", q4: "e", ...
+    };
+
+    function corrigir() {
+      let acertos = 0;
+      for (let q in gabarito) {
+        const resposta = document.querySelector(`input[name="${q}"]:checked`);
+        const div = document.querySelector(`input[name="${q}"]`).closest('.question');
+        div.classList.remove('correct', 'wrong');
+
+        if (resposta) {
+          if (resposta.value === gabarito[q]) {
+            acertos++;
+            div.classList.add('correct');
+          } else {
+            div.classList.add('wrong');
+          }
+        } else {
+          div.classList.add('wrong');
+        }
+      }
+
+      document.getElementById("resultado").textContent = `Você acertou ${acertos} de ${Object.keys(gabarito).length} questões.`;
+    }
+  </script>
+</body>
+</html>

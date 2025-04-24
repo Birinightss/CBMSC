@@ -1,46 +1,150 @@
-<script>
-  const gabarito = {
-    q1: "c",
-    q2: "d"
-    // Adicione os demais: q3: "a", ...
-  };
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulado - Combate a Incêndio</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 30px auto; padding: 20px; line-height: 1.6; }
+    h1 { text-align: center; }
+    .question { margin-bottom: 20px; }
+    .wrong { background-color: #ffe5e5; }
+    .correct { background-color: #e0ffe0; }
+    .explicacao { font-style: italic; margin-top: 5px; }
+  </style>
+</head>
+<body>
+  <h1>🔥 Simulado – Combate a Incêndio</h1>
 
-  const explicacoes = {
-    q1: "A classe C é usada para incêndios envolvendo equipamentos elétricos energizados. Usar água pode causar choques.",
-    q2: "Água pressurizada é ideal para materiais sólidos como papel, madeira e tecido (classe A)."
-    // Adicione os demais: q3: "texto explicativo", ...
-  };
+  <form id="quizForm">
 
-  function corrigir() {
-    let acertos = 0;
-    for (let q in gabarito) {
-      const resposta = document.querySelector(`input[name="${q}"]:checked`);
-      const div = document.querySelector(`input[name="${q}"]`).closest('.question');
-      const explicacaoEl = div.querySelector('.explicacao');
+    <!-- Questões -->
+    <!-- Para economizar espaço, vou usar uma função no JS para gerar automaticamente abaixo -->
 
-      div.classList.remove('correct', 'wrong');
-      if (explicacaoEl) explicacaoEl.remove(); // remove explicações anteriores
+  </form>
 
-      const explicacao = document.createElement('p');
-      explicacao.className = 'explicacao';
-      explicacao.style.fontStyle = 'italic';
+  <button onclick="corrigir()">Corrigir</button>
+  <h2 id="resultado"></h2>
 
-      if (resposta) {
-        if (resposta.value === gabarito[q]) {
-          acertos++;
-          div.classList.add('correct');
+  <script>
+    const questoes = [
+      {
+        id: "q1",
+        pergunta: "Qual é a classe de incêndio que envolve equipamentos elétricos energizados?",
+        opcoes: ["Classe A", "Classe B", "Classe C", "Classe D", "Classe K"],
+        correta: "c",
+        explicacao: "A classe C é usada para incêndios envolvendo equipamentos elétricos energizados. Usar água pode causar choques."
+      },
+      {
+        id: "q2",
+        pergunta: "Em um princípio de incêndio em papel e madeira, o extintor mais adequado é o:",
+        opcoes: ["CO₂", "Pó químico seco", "Espuma", "Água pressurizada", "Halon"],
+        correta: "d",
+        explicacao: "Água pressurizada é ideal para materiais sólidos como papel, madeira e tecido (classe A)."
+      },
+      {
+        id: "q3",
+        pergunta: "A função do abafador em combate a incêndios florestais é:",
+        opcoes: ["Remover o oxigênio do fogo", "Resfriar o foco de calor", "Remover o material combustível", "Substituir o uso de água", "Injetar gás carbônico no foco"],
+        correta: "a",
+        explicacao: "O abafador tira o oxigênio do fogo, interrompendo a combustão."
+      },
+      {
+        id: "q4",
+        pergunta: "Em caso de incêndio em óleo de cozinha, qual extintor é o mais indicado?",
+        opcoes: ["Água pressurizada", "Espuma mecânica", "Pó químico seco", "CO₂", "Classe K (Acetato de Potássio)"],
+        correta: "e",
+        explicacao: "O extintor Classe K é ideal para incêndios com óleo e gordura."
+      },
+      {
+        id: "q5",
+        pergunta: "O que significa o triângulo do fogo?",
+        opcoes: ["Três tipos de extintores", "Combustível, comburente e calor", "Sólido, líquido e gasoso", "Tempo, temperatura e pressão", "Chama, fumaça e calor"],
+        correta: "b",
+        explicacao: "O triângulo do fogo representa os três elementos necessários para o fogo existir."
+      },
+      {
+        id: "q6",
+        pergunta: "Qual é o primeiro passo ao identificar um princípio de incêndio?",
+        opcoes: ["Abrir todas as janelas", "Tentar apagar sozinho", "Acionar o alarme e evacuar o local", "Ligar para a polícia", "Usar o extintor mais próximo"],
+        correta: "c",
+        explicacao: "O primeiro passo é acionar o alarme e evacuar com segurança."
+      },
+      {
+        id: "q7",
+        pergunta: "O agente extintor CO₂ é mais eficiente em qual tipo de incêndio?",
+        opcoes: ["Líquidos inflamáveis", "Metais pirofóricos", "Sólidos combustíveis", "Equipamentos elétricos", "Óleo de cozinha"],
+        correta: "d",
+        explicacao: "CO₂ não conduz eletricidade, sendo ideal para equipamentos energizados."
+      },
+      {
+        id: "q8",
+        pergunta: "Sobre a utilização do extintor, é correto afirmar que:",
+        opcoes: ["Deve-se mirar diretamente nas chamas", "O lacre deve ser mantido durante o uso", "O jato deve ser feito de cima para baixo", "Deve-se iniciar o jato na base do fogo", "Todos os extintores são usados da mesma forma"],
+        correta: "d",
+        explicacao: "O correto é sempre mirar na base das chamas."
+      },
+      {
+        id: "q9",
+        pergunta: "O fogo classe B refere-se a incêndios em:",
+        opcoes: ["Tecidos e papéis", "Equipamentos eletrônicos", "Óleos, graxas e solventes", "Metais combustíveis", "Alimentos inflamáveis"],
+        correta: "c",
+        explicacao: "Classe B envolve líquidos inflamáveis como graxas, óleos e solventes."
+      },
+      {
+        id: "q10",
+        pergunta: "Sobre incêndios em metais como magnésio ou titânio, qual é a ação correta?",
+        opcoes: ["Jogar água em abundância", "Usar CO₂ para abafar", "Utilizar extintor de classe D", "Usar espuma para resfriar", "Usar panos molhados para isolar"],
+        correta: "c",
+        explicacao: "Metais combustíveis só devem ser combatidos com extintores classe D."
+      }
+    ];
+
+    const form = document.getElementById("quizForm");
+    questoes.forEach(q => {
+      const div = document.createElement("div");
+      div.className = "question";
+      div.id = q.id;
+      const p = document.createElement("p");
+      p.innerHTML = `<strong>${q.id.replace("q", "")}. ${q.pergunta}</strong>`;
+      div.appendChild(p);
+      ["a", "b", "c", "d", "e"].forEach((letra, i) => {
+        const label = document.createElement("label");
+        label.innerHTML = `<input type="radio" name="${q.id}" value="${letra}"> ${letra}) ${q.opcoes[i]}`;
+        div.appendChild(label);
+        div.appendChild(document.createElement("br"));
+      });
+      form.appendChild(div);
+    });
+
+    function corrigir() {
+      let acertos = 0;
+      questoes.forEach(q => {
+        const resposta = document.querySelector(`input[name="${q.id}"]:checked`);
+        const div = document.getElementById(q.id);
+        div.classList.remove('correct', 'wrong');
+        const antiga = div.querySelector(".explicacao");
+        if (antiga) antiga.remove();
+
+        const explicacao = document.createElement("p");
+        explicacao.className = "explicacao";
+
+        if (resposta) {
+          if (resposta.value === q.correta) {
+            acertos++;
+            div.classList.add("correct");
+          } else {
+            div.classList.add("wrong");
+            explicacao.innerHTML = `❌ Resposta incorreta.<br><strong>Correta:</strong> (${q.correta})<br>💡 ${q.explicacao}`;
+            div.appendChild(explicacao);
+          }
         } else {
-          div.classList.add('wrong');
-          explicacao.innerHTML = `❌ Resposta incorreta. <br><strong>Correta:</strong> (${gabarito[q]})<br>💡 ${explicacoes[q] || ""}`;
+          div.classList.add("wrong");
+          explicacao.innerHTML = `❌ Você não respondeu.<br><strong>Correta:</strong> (${q.correta})<br>💡 ${q.explicacao}`;
           div.appendChild(explicacao);
         }
-      } else {
-        div.classList.add('wrong');
-        explicacao.innerHTML = `❌ Você não respondeu essa questão. <br><strong>Correta:</strong> (${gabarito[q]})<br>💡 ${explicacoes[q] || ""}`;
-        div.appendChild(explicacao);
-      }
+      });
+      document.getElementById("resultado").textContent = `✅ Você acertou ${acertos} de ${questoes.length} questões.`;
     }
-
-    document.getElementById("resultado").textContent = `✅ Você acertou ${acertos} de ${Object.keys(gabarito).length} questões.`;
-  }
-</script>
+  </script>
+</body>
+</html>

@@ -15,6 +15,8 @@
 <body>
   <h1>🔥 Simulado – Combate a Incêndio</h1>
   <form id="quizForm">
+
+    <!-- As 10 questões -->
     <div class="question">
       <p><strong>1. Qual é a classe de incêndio que envolve equipamentos elétricos energizados?</strong></p>
       <label><input type="radio" name="q1" value="a"> a) Classe A</label><br>
@@ -23,6 +25,7 @@
       <label><input type="radio" name="q1" value="d"> d) Classe D</label><br>
       <label><input type="radio" name="q1" value="e"> e) Classe K</label>
     </div>
+
     <div class="question">
       <p><strong>2. Em um princípio de incêndio em papel e madeira, o extintor mais adequado é o:</strong></p>
       <label><input type="radio" name="q2" value="a"> a) CO₂</label><br>
@@ -31,6 +34,7 @@
       <label><input type="radio" name="q2" value="d"> d) Água pressurizada</label><br>
       <label><input type="radio" name="q2" value="e"> e) Halon</label>
     </div>
+
     <div class="question">
       <p><strong>3. A função do abafador em combate a incêndios florestais é:</strong></p>
       <label><input type="radio" name="q3" value="a"> a) Remover o oxigênio do fogo</label><br>
@@ -39,6 +43,7 @@
       <label><input type="radio" name="q3" value="d"> d) Substituir o uso de água</label><br>
       <label><input type="radio" name="q3" value="e"> e) Injetar gás carbônico no foco</label>
     </div>
+
     <div class="question">
       <p><strong>4. Em caso de incêndio em óleo de cozinha, qual extintor é o mais indicado?</strong></p>
       <label><input type="radio" name="q4" value="a"> a) Água pressurizada</label><br>
@@ -47,6 +52,7 @@
       <label><input type="radio" name="q4" value="d"> d) CO₂</label><br>
       <label><input type="radio" name="q4" value="e"> e) Classe K (Acetato de Potássio)</label>
     </div>
+
     <div class="question">
       <p><strong>5. O que significa o triângulo do fogo?</strong></p>
       <label><input type="radio" name="q5" value="a"> a) Três tipos de extintores</label><br>
@@ -55,6 +61,7 @@
       <label><input type="radio" name="q5" value="d"> d) Tempo, temperatura e pressão</label><br>
       <label><input type="radio" name="q5" value="e"> e) Chama, fumaça e calor</label>
     </div>
+
     <div class="question">
       <p><strong>6. Qual é o primeiro passo ao identificar um princípio de incêndio?</strong></p>
       <label><input type="radio" name="q6" value="a"> a) Abrir todas as janelas</label><br>
@@ -63,6 +70,7 @@
       <label><input type="radio" name="q6" value="d"> d) Ligar para a polícia</label><br>
       <label><input type="radio" name="q6" value="e"> e) Usar o extintor mais próximo</label>
     </div>
+
     <div class="question">
       <p><strong>7. O agente extintor CO₂ é mais eficiente em qual tipo de incêndio?</strong></p>
       <label><input type="radio" name="q7" value="a"> a) Líquidos inflamáveis</label><br>
@@ -71,6 +79,7 @@
       <label><input type="radio" name="q7" value="d"> d) Equipamentos elétricos</label><br>
       <label><input type="radio" name="q7" value="e"> e) Óleo de cozinha</label>
     </div>
+
     <div class="question">
       <p><strong>8. Sobre a utilização do extintor, é correto afirmar que:</strong></p>
       <label><input type="radio" name="q8" value="a"> a) Deve-se mirar diretamente nas chamas</label><br>
@@ -79,6 +88,7 @@
       <label><input type="radio" name="q8" value="d"> d) Deve-se iniciar o jato na base do fogo</label><br>
       <label><input type="radio" name="q8" value="e"> e) Todos os extintores são usados da mesma forma</label>
     </div>
+
     <div class="question">
       <p><strong>9. O fogo classe B refere-se a incêndios em:</strong></p>
       <label><input type="radio" name="q9" value="a"> a) Tecidos e papéis</label><br>
@@ -87,6 +97,7 @@
       <label><input type="radio" name="q9" value="d"> d) Metais combustíveis</label><br>
       <label><input type="radio" name="q9" value="e"> e) Alimentos inflamáveis</label>
     </div>
+
     <div class="question">
       <p><strong>10. Sobre incêndios em metais como magnésio ou titânio, qual é a ação correta?</strong></p>
       <label><input type="radio" name="q10" value="a"> a) Jogar água em abundância</label><br>
@@ -147,9 +158,9 @@
           div.appendChild(explicacao);
         }
       }
+
       document.getElementById("resultado").textContent = `✅ Você acertou ${acertos} de ${Object.keys(gabarito).length} questões.`;
     }
   </script>
-<br><br><a href="../index.html">⬅️ Voltar à Página Inicial</a>
 </body>
 </html>

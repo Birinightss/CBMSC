@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulado – Lição 1: Extintores de Incêndio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #d62828;
+    }
+    .question {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    .feedback {
+      margin-top: 30px;
+      background: #fff3cd;
+      border-left: 6px solid #ffeeba;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .correta { background-color: #e0ffe0; }
+    .errada { background-color: #ffe0e0; }
+  </style>
+</head>
+<body>
+  <h1>Simulado – Lição 1: Extintores de Incêndio</h1>
+  <form id="quizForm" style="text-align: left;">
+<div class="question" id="q1">
+<p><strong>1. Qual é a principal função do extintor de incêndio?</strong></p>
+<label><input type="radio" name="q1" value="a"> a) Apagar princípios de incêndio</label>
+<label><input type="radio" name="q1" value="b"> b) Gerar espuma de combate</label>
+<label><input type="radio" name="q1" value="c"> c) Aumentar a pressão da linha</label>
+<label><input type="radio" name="q1" value="d"> d) Resfriar equipamentos eletrônicos</label>
+<label><input type="radio" name="q1" value="e"> e) Evacuar ambientes fechados</label>
+</div>
+<div class="question" id="q2">
+<p><strong>2. O extintor de água pressurizada é mais indicado para qual classe de incêndio?</strong></p>
+<label><input type="radio" name="q2" value="a"> a) Classe C</label>
+<label><input type="radio" name="q2" value="b"> b) Classe B</label>
+<label><input type="radio" name="q2" value="c"> c) Classe A</label>
+<label><input type="radio" name="q2" value="d"> d) Classe D</label>
+<label><input type="radio" name="q2" value="e"> e) Classe K</label>
+</div>
+<div class="question" id="q3">
+<p><strong>3. Qual cor identifica os extintores de água no Brasil, segundo norma vigente?</strong></p>
+<label><input type="radio" name="q3" value="a"> a) Azul</label>
+<label><input type="radio" name="q3" value="b"> b) Preto</label>
+<label><input type="radio" name="q3" value="c"> c) Branco</label>
+<label><input type="radio" name="q3" value="d"> d) Vermelho com faixa verde</label>
+<label><input type="radio" name="q3" value="e"> e) Vermelho com faixa azul</label>
+</div>
+<div class="question" id="q4">
+<p><strong>4. Extintores de CO₂ são eficazes em quais classes de incêndio?</strong></p>
+<label><input type="radio" name="q4" value="a"> a) A e B</label>
+<label><input type="radio" name="q4" value="b"> b) B e C</label>
+<label><input type="radio" name="q4" value="c"> c) C e D</label>
+<label><input type="radio" name="q4" value="d"> d) A e D</label>
+<label><input type="radio" name="q4" value="e"> e) C e K</label>
+</div>
+<div class="question" id="q5">
+<p><strong>5. Qual o agente extintor mais apropriado para líquidos inflamáveis?</strong></p>
+<label><input type="radio" name="q5" value="a"> a) Espuma</label>
+<label><input type="radio" name="q5" value="b"> b) Pó químico seco</label>
+<label><input type="radio" name="q5" value="c"> c) CO₂</label>
+<label><input type="radio" name="q5" value="d"> d) Água pressurizada</label>
+<label><input type="radio" name="q5" value="e"> e) Cloreto de potássio</label>
+</div>
+<div class="question" id="q6">
+<p><strong>6. Extintores devem passar por inspeção visual com qual periodicidade mínima?</strong></p>
+<label><input type="radio" name="q6" value="a"> a) Semestral</label>
+<label><input type="radio" name="q6" value="b"> b) Mensal</label>
+<label><input type="radio" name="q6" value="c"> c) Anual</label>
+<label><input type="radio" name="q6" value="d"> d) Diária</label>
+<label><input type="radio" name="q6" value="e"> e) Trimestral</label>
+</div>
+<div class="question" id="q7">
+<p><strong>7. Qual classe de incêndio envolve equipamentos elétricos energizados?</strong></p>
+<label><input type="radio" name="q7" value="a"> a) Classe A</label>
+<label><input type="radio" name="q7" value="b"> b) Classe B</label>
+<label><input type="radio" name="q7" value="c"> c) Classe C</label>
+<label><input type="radio" name="q7" value="d"> d) Classe D</label>
+<label><input type="radio" name="q7" value="e"> e) Classe K</label>
+</div>
+<div class="question" id="q8">
+<p><strong>8. Pó químico seco BC é eficaz contra quais tipos de fogo?</strong></p>
+<label><input type="radio" name="q8" value="a"> a) Somente fogo de classe A</label>
+<label><input type="radio" name="q8" value="b"> b) Metais combustíveis e óleos</label>
+<label><input type="radio" name="q8" value="c"> c) Madeiras e tecidos</label>
+<label><input type="radio" name="q8" value="d"> d) Líquidos inflamáveis e equipamentos elétricos</label>
+<label><input type="radio" name="q8" value="e"> e) Óleos de cozinha</label>
+</div>
+<div class="question" id="q9">
+<p><strong>9. O que acontece se um extintor de água for usado em equipamentos elétricos?</strong></p>
+<label><input type="radio" name="q9" value="a"> a) Efeito de abafamento do fogo</label>
+<label><input type="radio" name="q9" value="b"> b) Extinção segura</label>
+<label><input type="radio" name="q9" value="c"> c) Redução da tensão</label>
+<label><input type="radio" name="q9" value="d"> d) Reação endotérmica</label>
+<label><input type="radio" name="q9" value="e"> e) Risco de choque elétrico e agravamento do incêndio</label>
+</div>
+<div class="question" id="q10">
+<p><strong>10. Qual o mecanismo de ação do CO₂ no combate ao fogo?</strong></p>
+<label><input type="radio" name="q10" value="a"> a) Abafamento e deslocamento do oxigênio</label>
+<label><input type="radio" name="q10" value="b"> b) Resfriamento da chama</label>
+<label><input type="radio" name="q10" value="c"> c) Combustão catalisada</label>
+<label><input type="radio" name="q10" value="d"> d) Interrupção da pirólise</label>
+<label><input type="radio" name="q10" value="e"> e) Reação endotérmica direta</label>
+</div>
+
+    <button type="button" onclick="corrigir()">Corrigir</button>
+  </form>
+
+  <div id="resultado" class="feedback"></div>
+  <br><a href="index.html">⬅️ Voltar ao Menu da Lição</a>
+
+  <script>
+    const gabarito = {'q1': 'a', 'q2': 'c', 'q3': 'd', 'q4': 'b', 'q5': 'a', 'q6': 'b', 'q7': 'c', 'q8': 'd', 'q9': 'e', 'q10': 'a'};
+    const explicacoes = {'q1': 'Os extintores são destinados ao combate inicial de incêndios.', 'q2': 'Classe A envolve materiais sólidos como papel, tecido e madeira.', 'q3': 'A faixa verde identifica extintores de água.', 'q4': 'CO₂ é indicado para líquidos inflamáveis e equipamentos elétricos.', 'q5': 'A espuma cobre o líquido e evita o contato com o oxigênio.', 'q6': 'A vistoria mensal garante que o extintor esteja carregado e acessível.', 'q7': 'Classe C está relacionada a circuitos e aparelhos elétricos.', 'q8': 'O pó BC age por abafamento e é útil contra líquidos e eletricidade.', 'q9': 'Água conduz eletricidade e pode agravar o incêndio e causar choques.', 'q10': 'CO₂ remove o oxigênio ao redor da chama, abafando o fogo.'};
+
+    function corrigir() {
+      let acertos = 0;
+      let total = Object.keys(gabarito).length;
+      let resumo = "";
+
+      for (let q in gabarito) {
+        let div = document.getElementById(q);
+        let selecionada = document.querySelector(`input[name="${q}"]:checked`);
+        div.classList.remove('correta', 'errada');
+
+        if (selecionada) {
+          if (selecionada.value === gabarito[q]) {
+            acertos++;
+            div.classList.add('correta');
+          } else {
+            div.classList.add('errada');
+            resumo += "<p><strong>" + q.replace('q','') + ".</strong> " + explicacoes[q] + "</p>";
+          }
+        } else {
+          div.classList.add('errada');
+          resumo += "<p><strong>" + q.replace('q','') + ".</strong> Questão não respondida. " + explicacoes[q] + "</p>";
+        }
+      }
+
+      document.getElementById("resultado").innerHTML =
+        "<h3>✅ Você acertou " + acertos + " de " + total + " questões.</h3>" +
+        (resumo ? "<h4>Explicações:</h4>" + resumo : "<p>Todas as respostas estão corretas!</p>");
+    }
+  </script>
+
+  <footer style="margin-top: 40px; display: flex; justify-content: space-between; font-weight: bold;">
+    <div>4° Pelotão - Aracuã</div>
+    <div>AL SD De Melo</div>
+  </footer>
+</body>
+</html>

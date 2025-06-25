@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulado – Lição 6: Montagem de Estabelecimentos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #d62828;
+    }
+    .question {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    .feedback {
+      margin-top: 30px;
+      background: #fff3cd;
+      border-left: 6px solid #ffeeba;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .correta { background-color: #e0ffe0; }
+    .errada { background-color: #ffe0e0; }
+  </style>
+</head>
+<body>
+  <header style="margin-bottom: 30px; display: flex; justify-content: space-between; font-weight: bold;">
+    <div>4° Pelotão - Aracuã</div>
+    <div>AL SD De Melo</div>
+  </header>
+
+  <h1>Simulado – Lição 6: Montagem de Estabelecimentos</h1>
+  <form id="quizForm" style="text-align: left;">
+<div class="question" id="q1">
+<p><strong>1. Qual o objetivo da montagem de estabelecimentos em uma ocorrência?</strong></p>
+<label><input type="radio" name="q1" value="a"> a) Organizar e distribuir os recursos táticos no local</label>
+<label><input type="radio" name="q1" value="b"> b) Enfileirar os bombeiros para entrada coordenada</label>
+<label><input type="radio" name="q1" value="c"> c) Ligar os hidrantes à central elétrica</label>
+<label><input type="radio" name="q1" value="d"> d) Posicionar os veículos para resgate aéreo</label>
+<label><input type="radio" name="q1" value="e"> e) Reunir apenas os oficiais superiores</label>
+</div>
+<div class="question" id="q2">
+<p><strong>2. Um lance simples de mangueira é:</strong></p>
+<label><input type="radio" name="q2" value="a"> a) Uma ligação entre duas válvulas</label>
+<label><input type="radio" name="q2" value="b"> b) Um trecho entre a fonte e o esguicho</label>
+<label><input type="radio" name="q2" value="c"> c) A conexão de duas mangueiras com adaptador</label>
+<label><input type="radio" name="q2" value="d"> d) O trajeto do jato de água até o foco</label>
+<label><input type="radio" name="q2" value="e"> e) O recuo do bombeiro após a extinção</label>
+</div>
+<div class="question" id="q3">
+<p><strong>3. Qual equipamento é necessário para dividir um lance em dois ramos?</strong></p>
+<label><input type="radio" name="q3" value="a"> a) Esguicho regulável</label>
+<label><input type="radio" name="q3" value="b"> b) Prolongador de engate rápido</label>
+<label><input type="radio" name="q3" value="c"> c) Conector de 90°</label>
+<label><input type="radio" name="q3" value="d"> d) Mangote de descarga</label>
+<label><input type="radio" name="q3" value="e"> e) Derivante em Y</label>
+</div>
+<div class="question" id="q4">
+<p><strong>4. O que é um estabelecimento com lance duplo?</strong></p>
+<label><input type="radio" name="q4" value="a"> a) Montagem com duas viaturas</label>
+<label><input type="radio" name="q4" value="b"> b) Utilização de extintores e esguichos</label>
+<label><input type="radio" name="q4" value="c"> c) Montagem com duas linhas de ataque conectadas a um só ponto</label>
+<label><input type="radio" name="q4" value="d"> d) Posicionamento duplo de hidrantes</label>
+<label><input type="radio" name="q4" value="e"> e) Manobra com dois tipos de esguicho</label>
+</div>
+<div class="question" id="q5">
+<p><strong>5. A principal função do prolongamento é:</strong></p>
+<label><input type="radio" name="q5" value="a"> a) Aumentar a pressão da linha</label>
+<label><input type="radio" name="q5" value="b"> b) Ampliar o alcance da linha de mangueiras</label>
+<label><input type="radio" name="q5" value="c"> c) Reduzir o volume de água</label>
+<label><input type="radio" name="q5" value="d"> d) Elevar a altura do esguicho</label>
+<label><input type="radio" name="q5" value="e"> e) Controlar a pressão negativa</label>
+</div>
+<div class="question" id="q6">
+<p><strong>6. O que deve ser feito ao montar um lance em escada?</strong></p>
+<label><input type="radio" name="q6" value="a"> a) Utilizar mangueiras rígidas</label>
+<label><input type="radio" name="q6" value="b"> b) Aumentar a vazão antes da subida</label>
+<label><input type="radio" name="q6" value="c"> c) Fixar o esguicho com fita isolante</label>
+<label><input type="radio" name="q6" value="d"> d) Garantir que a mangueira esteja presa com cordas</label>
+<label><input type="radio" name="q6" value="e"> e) Enrolar a mangueira para facilitar transporte</label>
+</div>
+<div class="question" id="q7">
+<p><strong>7. Como evitar o estrangulamento da mangueira em curvas?</strong></p>
+<label><input type="radio" name="q7" value="a"> a) Evitar ângulos fechados e manter folga</label>
+<label><input type="radio" name="q7" value="b"> b) Pressurizar antes do enrolamento</label>
+<label><input type="radio" name="q7" value="c"> c) Reduzir o diâmetro do bocal</label>
+<label><input type="radio" name="q7" value="d"> d) Esticar totalmente a mangueira</label>
+<label><input type="radio" name="q7" value="e"> e) Realizar ancoragem no ponto mais alto</label>
+</div>
+<div class="question" id="q8">
+<p><strong>8. Ao montar um estabelecimento em área com escadas, o bombeiro deve:</strong></p>
+<label><input type="radio" name="q8" value="a"> a) Posicionar o esguicho no patamar superior</label>
+<label><input type="radio" name="q8" value="b"> b) Avaliar os pontos de fixação e progressão da mangueira</label>
+<label><input type="radio" name="q8" value="c"> c) Utilizar extintor ao invés de mangueira</label>
+<label><input type="radio" name="q8" value="d"> d) Utilizar mangueiras tipo 3 obrigatoriamente</label>
+<label><input type="radio" name="q8" value="e"> e) Manter a linha fechada para resfriamento</label>
+</div>
+<div class="question" id="q9">
+<p><strong>9. O que caracteriza uma montagem ofensiva?</strong></p>
+<label><input type="radio" name="q9" value="a"> a) Uso de ventilação forçada</label>
+<label><input type="radio" name="q9" value="b"> b) Posicionamento em locais altos</label>
+<label><input type="radio" name="q9" value="c"> c) Ataque direto ao foco do incêndio</label>
+<label><input type="radio" name="q9" value="d"> d) Alimentação do sistema preventivo</label>
+<label><input type="radio" name="q9" value="e"> e) Combate externo com esguicho fixo</label>
+</div>
+<div class="question" id="q10">
+<p><strong>10. Durante uma montagem com linha de recalque, qual cuidado é essencial?</strong></p>
+<label><input type="radio" name="q10" value="a"> a) Utilizar somente mangueiras de 1 polegada</label>
+<label><input type="radio" name="q10" value="b"> b) Evitar o uso de esguichos reguláveis</label>
+<label><input type="radio" name="q10" value="c"> c) Usar hidrantes subterrâneos apenas</label>
+<label><input type="radio" name="q10" value="d"> d) Garantir estanqueidade e vedação das conexões</label>
+<label><input type="radio" name="q10" value="e"> e) Pressurizar antes de conectar a viatura</label>
+</div>
+
+    <button type="button" onclick="corrigir()">Corrigir</button>
+  </form>
+
+  <div id="resultado" class="feedback"></div>
+  <br><a href="index.html">⬅️ Voltar ao Menu da Lição</a>
+
+  <script>
+    const gabarito = {'q1': 'a', 'q2': 'b', 'q3': 'e', 'q4': 'c', 'q5': 'b', 'q6': 'd', 'q7': 'a', 'q8': 'b', 'q9': 'c', 'q10': 'd'};
+    const explicacoes = {'q1': 'O estabelecimento organiza o uso de mangueiras, esguichos e demais recursos.', 'q2': 'Lance simples é a mangueira entre a fonte e o esguicho.', 'q3': 'Derivantes em Y ou T permitem dividir o fluxo da linha principal.', 'q4': 'O lance duplo divide a linha em dois ataques simultâneos.', 'q5': 'O prolongamento serve para alcançar áreas mais distantes.', 'q6': 'Amarração com cordas evita quedas e perdas de controle.', 'q7': 'Ângulos fechados devem ser evitados para garantir o fluxo de água.', 'q8': 'Pontos de fixação e rota segura devem ser observados.', 'q9': 'O ataque ofensivo visa extinguir o fogo diretamente no foco.', 'q10': 'Mangueiras e conexões devem estar perfeitamente vedadas.'};
+
+    function corrigir() {
+      let acertos = 0;
+      let total = Object.keys(gabarito).length;
+      let resumo = "";
+
+      for (let q in gabarito) {
+        let div = document.getElementById(q);
+        let selecionada = document.querySelector(`input[name="${q}"]:checked`);
+        div.classList.remove('correta', 'errada');
+
+        if (selecionada) {
+          if (selecionada.value === gabarito[q]) {
+            acertos++;
+            div.classList.add('correta');
+          } else {
+            div.classList.add('errada');
+            resumo += "<p><strong>" + q.replace('q','') + ".</strong> " + explicacoes[q] + "</p>";
+          }
+        } else {
+          div.classList.add('errada');
+          resumo += "<p><strong>" + q.replace('q','') + ".</strong> Questão não respondida. " + explicacoes[q] + "</p>";
+        }
+      }
+
+      document.getElementById("resultado").innerHTML =
+        "<h3>✅ Você acertou " + acertos + " de " + total + " questões.</h3>" +
+        (resumo ? "<h4>Explicações:</h4>" + resumo : "<p>Todas as respostas estão corretas!</p>");
+    }
+  </script>
+
+  <footer style="margin-top: 40px; display: flex; justify-content: space-between; font-weight: bold;">
+    <div>4° Pelotão - Aracuã</div>
+    <div>AL SD De Melo</div>
+  </footer>
+</body>
+</html>

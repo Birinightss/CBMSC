@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulado – Lição 3: Escadas de Bombeiro</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #d62828;
+    }
+    .question {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    .feedback {
+      margin-top: 30px;
+      background: #fff3cd;
+      border-left: 6px solid #ffeeba;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .correta { background-color: #e0ffe0; }
+    .errada { background-color: #ffe0e0; }
+  </style>
+</head>
+<body>
+  <h1>Simulado – Lição 3: Escadas de Bombeiro</h1>
+  <form id="quizForm" style="text-align: left;">
+<div class="question" id="q1">
+<p><strong>1. Qual a principal função das escadas em operações de bombeiros?</strong></p>
+<label><input type="radio" name="q1" value="a"> a) Permitir o acesso a locais elevados ou confinados</label>
+<label><input type="radio" name="q1" value="b"> b) Substituir extintores em alturas</label>
+<label><input type="radio" name="q1" value="c"> c) Suportar equipamentos de ventilação</label>
+<label><input type="radio" name="q1" value="d"> d) Conduzir água para o combate</label>
+<label><input type="radio" name="q1" value="e"> e) Apoiar cordas de salvamento</label>
+</div>
+<div class="question" id="q2">
+<p><strong>2. Como deve ser transportada uma escada manual com segurança?</strong></p>
+<label><input type="radio" name="q2" value="a"> a) Sempre na vertical com uma só pessoa</label>
+<label><input type="radio" name="q2" value="b"> b) Com uma mão livre para comunicação</label>
+<label><input type="radio" name="q2" value="c"> c) Encostada no ombro do bombeiro</label>
+<label><input type="radio" name="q2" value="d"> d) Por duas pessoas, uma em cada extremidade</label>
+<label><input type="radio" name="q2" value="e"> e) Arrastando pela base com cuidado</label>
+</div>
+<div class="question" id="q3">
+<p><strong>3. A escada do tipo gancho é especialmente útil para:</strong></p>
+<label><input type="radio" name="q3" value="a"> a) Manobras em terrenos íngremes</label>
+<label><input type="radio" name="q3" value="b"> b) Apoio de ventiladores</label>
+<label><input type="radio" name="q3" value="c"> c) Acesso a janelas e beirais internos</label>
+<label><input type="radio" name="q3" value="d"> d) Transporte de vítimas</label>
+<label><input type="radio" name="q3" value="e"> e) Resfriamento de fachadas</label>
+</div>
+<div class="question" id="q4">
+<p><strong>4. A inclinação ideal de uma escada em uso é de aproximadamente:</strong></p>
+<label><input type="radio" name="q4" value="a"> a) 45 graus</label>
+<label><input type="radio" name="q4" value="b"> b) 70 graus</label>
+<label><input type="radio" name="q4" value="c"> c) 90 graus</label>
+<label><input type="radio" name="q4" value="d"> d) 30 graus</label>
+<label><input type="radio" name="q4" value="e"> e) 60 graus</label>
+</div>
+<div class="question" id="q5">
+<p><strong>5. Para acesso a telhados, a escada deve ultrapassar a borda em:</strong></p>
+<label><input type="radio" name="q5" value="a"> a) 10 cm</label>
+<label><input type="radio" name="q5" value="b"> b) 20 cm</label>
+<label><input type="radio" name="q5" value="c"> c) 30 cm</label>
+<label><input type="radio" name="q5" value="d"> d) 45 cm</label>
+<label><input type="radio" name="q5" value="e"> e) 60 cm</label>
+</div>
+<div class="question" id="q6">
+<p><strong>6. O que diferencia uma escada prolongável de uma escada simples?</strong></p>
+<label><input type="radio" name="q6" value="a"> a) O material de fabricação</label>
+<label><input type="radio" name="q6" value="b"> b) O número de degraus</label>
+<label><input type="radio" name="q6" value="c"> c) A presença de lanços móveis com sistema de elevação</label>
+<label><input type="radio" name="q6" value="d"> d) O uso em ambientes confinados</label>
+<label><input type="radio" name="q6" value="e"> e) O formato curvo da base</label>
+</div>
+<div class="question" id="q7">
+<p><strong>7. Qual precaução deve ser tomada ao utilizar escadas em terrenos inclinados?</strong></p>
+<label><input type="radio" name="q7" value="a"> a) Fixação da base com cordas ou ancoragem</label>
+<label><input type="radio" name="q7" value="b"> b) Colocar areia sob os pés</label>
+<label><input type="radio" name="q7" value="c"> c) Posicionar a escada transversalmente ao declive</label>
+<label><input type="radio" name="q7" value="d"> d) Manter o bombeiro em posição de segurança com cinto</label>
+<label><input type="radio" name="q7" value="e"> e) Aumentar o número de bombeiros no apoio</label>
+</div>
+<div class="question" id="q8">
+<p><strong>8. Qual parte da escada garante a sustentação lateral da estrutura?</strong></p>
+<label><input type="radio" name="q8" value="a"> a) Degraus</label>
+<label><input type="radio" name="q8" value="b"> b) Base</label>
+<label><input type="radio" name="q8" value="c"> c) Gancho</label>
+<label><input type="radio" name="q8" value="d"> d) Banzos</label>
+<label><input type="radio" name="q8" value="e"> e) Travessa</label>
+</div>
+<div class="question" id="q9">
+<p><strong>9. Durante operações em altura com escadas, o bombeiro deve utilizar:</strong></p>
+<label><input type="radio" name="q9" value="a"> a) Bota de couro rígido</label>
+<label><input type="radio" name="q9" value="b"> b) Capacete com lanterna</label>
+<label><input type="radio" name="q9" value="c"> c) Cinto de segurança com talabarte</label>
+<label><input type="radio" name="q9" value="d"> d) Equipamento de respiração autônomo</label>
+<label><input type="radio" name="q9" value="e"> e) Roupas aluminizadas</label>
+</div>
+<div class="question" id="q10">
+<p><strong>10. Qual fator pode tornar instável uma escada prolongável?</strong></p>
+<label><input type="radio" name="q10" value="a"> a) Falta de travamento dos lanços móveis</label>
+<label><input type="radio" name="q10" value="b"> b) Excesso de usuários simultâneos</label>
+<label><input type="radio" name="q10" value="c"> c) Uso em ambientes fechados</label>
+<label><input type="radio" name="q10" value="d"> d) Aplicação de força lateral</label>
+<label><input type="radio" name="q10" value="e"> e) Inclinação inferior a 45 graus</label>
+</div>
+
+    <button type="button" onclick="corrigir()">Corrigir</button>
+  </form>
+
+  <div id="resultado" class="feedback"></div>
+  <br><a href="index.html">⬅️ Voltar ao Menu da Lição</a>
+
+  <script>
+    const gabarito = {'q1': 'a', 'q2': 'd', 'q3': 'c', 'q4': 'b', 'q5': 'e', 'q6': 'c', 'q7': 'a', 'q8': 'd', 'q9': 'c', 'q10': 'a'};
+    const explicacoes = {'q1': 'As escadas são utilizadas principalmente para acesso vertical seguro.', 'q2': 'Transporte seguro exige dois bombeiros, um em cada ponta.', 'q3': 'Escadas com gancho fixam-se em peitoris e janelas.', 'q4': '70° garante equilíbrio e segurança ao subir.', 'q5': 'A escada deve ultrapassar pelo menos 60 cm o ponto de apoio.', 'q6': 'Escadas prolongáveis têm lanços móveis para alcançar maiores alturas.', 'q7': 'Escadas devem ser fixadas para evitar escorregamento.', 'q8': 'Banzos são os perfis laterais estruturais da escada.', 'q9': 'O talabarte evita quedas durante o trabalho em altura.', 'q10': 'O travamento é essencial para garantir segurança estrutural.'};
+
+    function corrigir() {
+      let acertos = 0;
+      let total = Object.keys(gabarito).length;
+      let resumo = "";
+
+      for (let q in gabarito) {
+        let div = document.getElementById(q);
+        let selecionada = document.querySelector(`input[name="${q}"]:checked`);
+        div.classList.remove('correta', 'errada');
+
+        if (selecionada) {
+          if (selecionada.value === gabarito[q]) {
+            acertos++;
+            div.classList.add('correta');
+          } else {
+            div.classList.add('errada');
+            resumo += "<p><strong>" + q.replace('q','') + ".</strong> " + explicacoes[q] + "</p>";
+          }
+        } else {
+          div.classList.add('errada');
+          resumo += "<p><strong>" + q.replace('q','') + ".</strong> Questão não respondida. " + explicacoes[q] + "</p>";
+        }
+      }
+
+      document.getElementById("resultado").innerHTML =
+        "<h3>✅ Você acertou " + acertos + " de " + total + " questões.</h3>" +
+        (resumo ? "<h4>Explicações:</h4>" + resumo : "<p>Todas as respostas estão corretas!</p>");
+    }
+  </script>
+
+  <footer style="margin-top: 40px; display: flex; justify-content: space-between; font-weight: bold;">
+    <div>4° Pelotão - Aracuã</div>
+    <div>AL SD De Melo</div>
+  </footer>
+</body>
+</html>

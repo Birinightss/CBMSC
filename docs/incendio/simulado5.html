@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulado – Lição 5: Hidráulica Aplicada</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #d62828;
+    }
+    .question {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    .feedback {
+      margin-top: 30px;
+      background: #fff3cd;
+      border-left: 6px solid #ffeeba;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .correta { background-color: #e0ffe0; }
+    .errada { background-color: #ffe0e0; }
+  </style>
+</head>
+<body>
+  <header style="margin-bottom: 30px; display: flex; justify-content: space-between; font-weight: bold;">
+    <div>4° Pelotão - Aracuã</div>
+    <div>AL SD De Melo</div>
+  </header>
+
+  <h1>Simulado – Lição 5: Hidráulica Aplicada</h1>
+  <form id="quizForm" style="text-align: left;">
+<div class="question" id="q1">
+<p><strong>1. O que é perda de carga em um sistema hidráulico?</strong></p>
+<label><input type="radio" name="q1" value="a"> a) Redução da pressão ao longo da tubulação</label>
+<label><input type="radio" name="q1" value="b"> b) Perda de água por evaporação</label>
+<label><input type="radio" name="q1" value="c"> c) Redução do nível do reservatório</label>
+<label><input type="radio" name="q1" value="d"> d) Variação do diâmetro da mangueira</label>
+<label><input type="radio" name="q1" value="e"> e) Aumento da vazão sem controle</label>
+</div>
+<div class="question" id="q2">
+<p><strong>2. Qual unidade é comumente usada para medir pressão hidráulica em bombeiros?</strong></p>
+<label><input type="radio" name="q2" value="a"> a) PSI</label>
+<label><input type="radio" name="q2" value="b"> b) Pascal</label>
+<label><input type="radio" name="q2" value="c"> c) Bar</label>
+<label><input type="radio" name="q2" value="d"> d) Metro de coluna de água (mca)</label>
+<label><input type="radio" name="q2" value="e"> e) Newton</label>
+</div>
+<div class="question" id="q3">
+<p><strong>3. O que define a vazão em uma linha de combate a incêndio?</strong></p>
+<label><input type="radio" name="q3" value="a"> a) A inclinação da tubulação</label>
+<label><input type="radio" name="q3" value="b"> b) Volume de água que passa por segundo</label>
+<label><input type="radio" name="q3" value="c"> c) Temperatura da água utilizada</label>
+<label><input type="radio" name="q3" value="d"> d) Diâmetro do registro</label>
+<label><input type="radio" name="q3" value="e"> e) Altura da edificação</label>
+</div>
+<div class="question" id="q4">
+<p><strong>4. O que pode causar perda de carga excessiva?</strong></p>
+<label><input type="radio" name="q4" value="a"> a) Mangueiras muito curtas</label>
+<label><input type="radio" name="q4" value="b"> b) Mangueira de maior diâmetro</label>
+<label><input type="radio" name="q4" value="c"> c) Muitos desvios e conexões</label>
+<label><input type="radio" name="q4" value="d"> d) Água fria sob pressão</label>
+<label><input type="radio" name="q4" value="e"> e) Combustível na tubulação</label>
+</div>
+<div class="question" id="q5">
+<p><strong>5. Qual a equação básica usada para perda de carga em sistemas de bombeiros?</strong></p>
+<label><input type="radio" name="q5" value="a"> a) Newton</label>
+<label><input type="radio" name="q5" value="b"> b) Bernoulli</label>
+<label><input type="radio" name="q5" value="c"> c) P = F/A</label>
+<label><input type="radio" name="q5" value="d"> d) Pascal</label>
+<label><input type="radio" name="q5" value="e"> e) Fórmula de Hazen-Williams</label>
+</div>
+<div class="question" id="q6">
+<p><strong>6. O que representa a sigla NPSH em hidráulica aplicada?</strong></p>
+<label><input type="radio" name="q6" value="a"> a) Nível de Potência de Supressão Hidráulica</label>
+<label><input type="radio" name="q6" value="b"> b) Altura Líquida Positiva de Sucção</label>
+<label><input type="radio" name="q6" value="c"> c) Pressão de Trabalho em Pressurização</label>
+<label><input type="radio" name="q6" value="d"> d) Nível de Proteção Secundária Hidráulica</label>
+<label><input type="radio" name="q6" value="e"> e) Número de Paradas Secundárias de Hidrante</label>
+</div>
+<div class="question" id="q7">
+<p><strong>7. Qual fator influencia diretamente na vazão?</strong></p>
+<label><input type="radio" name="q7" value="a"> a) Cor da mangueira</label>
+<label><input type="radio" name="q7" value="b"> b) Tipo de esguicho</label>
+<label><input type="radio" name="q7" value="c"> c) Diâmetro interno da tubulação</label>
+<label><input type="radio" name="q7" value="d"> d) Peso molecular da água</label>
+<label><input type="radio" name="q7" value="e"> e) Temperatura ambiente</label>
+</div>
+<div class="question" id="q8">
+<p><strong>8. Pressão estática é aquela medida:</strong></p>
+<label><input type="radio" name="q8" value="a"> a) Com a válvula fechada, sem escoamento</label>
+<label><input type="radio" name="q8" value="b"> b) Durante o escoamento máximo</label>
+<label><input type="radio" name="q8" value="c"> c) Em locais altos apenas</label>
+<label><input type="radio" name="q8" value="d"> d) Com mangueiras abertas e água fluindo</label>
+<label><input type="radio" name="q8" value="e"> e) Após o uso do hidrante</label>
+</div>
+<div class="question" id="q9">
+<p><strong>9. O que pode causar cavitação em bombas hidráulicas?</strong></p>
+<label><input type="radio" name="q9" value="a"> a) Uso contínuo do esguicho neblinado</label>
+<label><input type="radio" name="q9" value="b"> b) Baixa rotação da bomba</label>
+<label><input type="radio" name="q9" value="c"> c) Alta temperatura da água</label>
+<label><input type="radio" name="q9" value="d"> d) Pressão negativa na entrada da bomba</label>
+<label><input type="radio" name="q9" value="e"> e) Vazão excessiva no retorno</label>
+</div>
+<div class="question" id="q10">
+<p><strong>10. Qual o impacto da altitude na pressão da rede hidráulica?</strong></p>
+<label><input type="radio" name="q10" value="a"> a) Nenhum impacto</label>
+<label><input type="radio" name="q10" value="b"> b) Aumenta a vazão</label>
+<label><input type="radio" name="q10" value="c"> c) Reduz a pressão disponível</label>
+<label><input type="radio" name="q10" value="d"> d) Eleva a pressão manométrica</label>
+<label><input type="radio" name="q10" value="e"> e) Garante pressão constante</label>
+</div>
+
+    <button type="button" onclick="corrigir()">Corrigir</button>
+  </form>
+
+  <div id="resultado" class="feedback"></div>
+  <br><a href="index.html">⬅️ Voltar ao Menu da Lição</a>
+
+  <script>
+    const gabarito = {'q1': 'a', 'q2': 'd', 'q3': 'b', 'q4': 'c', 'q5': 'e', 'q6': 'b', 'q7': 'c', 'q8': 'a', 'q9': 'd', 'q10': 'c'};
+    const explicacoes = {'q1': 'Perda de carga é a diminuição da pressão por atrito e obstáculos.', 'q2': 'mca é a unidade usada na prática em redes de combate.', 'q3': 'Vazão é medida em litros por segundo ou minuto.', 'q4': 'Conexões e curvas em excesso aumentam o atrito e a perda.', 'q5': 'A equação de Hazen-Williams é utilizada em redes hidráulicas de combate.', 'q6': 'É a pressão disponível para evitar cavitação na bomba.', 'q7': 'Tubulações com maior diâmetro permitem maior vazão.', 'q8': 'É medida com a rede pressurizada, mas sem uso.', 'q9': 'A pressão abaixo do NPSH provoca formação de bolhas na entrada.', 'q10': 'Quanto maior a altitude, menor a pressão da água disponível.'};
+
+    function corrigir() {
+      let acertos = 0;
+      let total = Object.keys(gabarito).length;
+      let resumo = "";
+
+      for (let q in gabarito) {
+        let div = document.getElementById(q);
+        let selecionada = document.querySelector(`input[name="${q}"]:checked`);
+        div.classList.remove('correta', 'errada');
+
+        if (selecionada) {
+          if (selecionada.value === gabarito[q]) {
+            acertos++;
+            div.classList.add('correta');
+          } else {
+            div.classList.add('errada');
+            resumo += "<p><strong>" + q.replace('q','') + ".</strong> " + explicacoes[q] + "</p>";
+          }
+        } else {
+          div.classList.add('errada');
+          resumo += "<p><strong>" + q.replace('q','') + ".</strong> Questão não respondida. " + explicacoes[q] + "</p>";
+        }
+      }
+
+      document.getElementById("resultado").innerHTML =
+        "<h3>✅ Você acertou " + acertos + " de " + total + " questões.</h3>" +
+        (resumo ? "<h4>Explicações:</h4>" + resumo : "<p>Todas as respostas estão corretas!</p>");
+    }
+  </script>
+
+  <footer style="margin-top: 40px; display: flex; justify-content: space-between; font-weight: bold;">
+    <div>4° Pelotão - Aracuã</div>
+    <div>AL SD De Melo</div>
+  </footer>
+</body>
+</html>
